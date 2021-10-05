@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=WindSong&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;0,700;1,200&display=swap');
+*,
+::before,
+::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../aplet/foret_cerf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+}
+
+.container-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    animation: position 5s;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.container-title .header {
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'WindSong';
+    padding: 100px 150px 100px;
+}
+
+.container-title .header #title {
+    text-shadow: 5px 1px rgba(0, 0, 0, 0.37);
+    padding: 15px;
+    background: -webkit-linear-gradient(#df5e22f3, #722502, #028b52);
+    border-radius: 0.8px;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-text-stroke: black;
+    transition: all .5s;
+}
+
+.container-title ul {
+    display: flex;
+    justify-content: center;
+}
+
+.container-title ul li {
+    list-style: none;
+    height: 80px;
+}
+
+.container-title ul li a {
+    outline: none;
+    background: -webkit-linear-gradient(#df5e22f3, #722502, #028b52);
+    border-radius: 0.8px;
+    -webkit-text-stroke: black;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-family: 'WindSong';
+    height: 60px;
+    width: 100%;
+    padding: 18px;
+}
+
+.logo-medias {
+    animation: animate1 3s;
+    position: absolute;
+    top: 4%;
+    right: 0%;
+}
+
+.logo-medias li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-medias li img {
+    height: 60px;
+    margin: 20px;
+    filter: invert(1);
+    transform: scale(0.5);
+}
+
+a {
+    transition: .5s ease;
+    cursor: pointer;
+    position: relative;
+    font-family: 'WindSong';
+    font-size: 40px;
+    user-select: none;
+    z-index: 5;
+    margin: 30px;
+    text-align: center;
+}
+
+.container-title ul li a:hover {
+    transition: .5s ease;
+    text-shadow: 0.5px 10px 5px#3b1818;
+    -webkit-text-fill-color: -webkit-linear-gradient(#df5e22f3, #722502, #028b52)!important;
+}
+
+a::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    height: 60px;
+    width: 10px;
+    border-radius: 12px;
+    z-index: -1;
+    transition: all .5s;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+}
+
+.box-container {
+    display: flex;
+    animation: swipUp 10s;
+    padding: 10px;
+}
+
+.box {
+    width: 370px;
+    padding: 10px;
+    margin: 7px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+    transition: 1s;
+}
+
+.case-text {
+    background: rgba(0, 0, 0, .5);
+    height: 350px;
+}
+
+.case-text h5 {
+    font-family: 'windSong'!important;
+    text-align: center;
+    padding: 5px;
+}
+
+.case-text p {
+    width: 100%;
+    padding: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 8px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.box2 {
+    display: flex;
+}
+
+.box img {
+    border-radius: 25px;
+    width: 100%;
+}
+
+.box:hover {
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+@keyframes swipUp {
+    from {
+        transform: traslateY(200px);
+        opacity: 0;
+    }
+    to {
+        transform: traslateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes position {
+    from {
+        padding: 250px 10px;
+    }
+    to {
+        padding: none;
+    }
+}
+
+@keyframes animate1 {
+    0% {
+        right: -50%;
+    }
+    100% {
+        right: 0%;
+    }
+}

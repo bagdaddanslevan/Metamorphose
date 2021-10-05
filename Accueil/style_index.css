@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=WindSong&display=swap");
+*,
+ ::before,
+ ::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../aplet/foret_cerf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+}
+
+.container-title {
+    display: flex;
+    animation: swipUp 8s;
+    align-items: center;
+    flex-direction: column;
+    padding: 250px 10px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.container-title .header {
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'WindSong';
+    padding: 100px 150px 100px;
+}
+
+.container-title .header #title {
+    text-shadow: 5px 1px rgba(0, 0, 0, 0.37);
+    padding: 15px;
+    background: -webkit-linear-gradient(#df5e22f3, #722502, #028b52);
+    border-radius: 0.8px;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-text-stroke: black;
+    transition: all .5s;
+}
+
+.container-title ul {
+    display: flex;
+    justify-content: center;
+}
+
+.container-title ul li {
+    list-style: none;
+    height: 80px;
+}
+
+.container-title ul li a {
+    outline: none;
+    background: -webkit-linear-gradient(#df5e22f3, #722502, #028b52);
+    border-radius: 0.8px;
+    -webkit-text-stroke: black;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-family: 'WindSong';
+    height: 60px;
+    width: 100%;
+    padding: 18px;
+}
+
+.logo-medias {
+    animation: animate 5s;
+    position: absolute;
+    top: 15%;
+    right: 0%;
+}
+
+.logo-medias li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-medias li img {
+    height: 60px;
+    margin: 20px;
+    filter: invert(1);
+    transform: scale(0.5);
+}
+
+a {
+    transition: .5s ease;
+    cursor: pointer;
+    position: relative;
+    font-family: 'WindSong';
+    font-size: 40px;
+    user-select: none;
+    z-index: 5;
+    margin: 30px;
+    text-align: center;
+}
+
+.container-title ul li a:hover {
+    transition: .5s ease;
+    text-shadow: 0.5px 10px 5px#3b1818;
+    -webkit-text-fill-color: -webkit-linear-gradient(#df5e22f3, #722502, #028b52)!important;
+}
+
+a::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    height: 60px;
+    width: 10px;
+    border-radius: 12px;
+    z-index: -1;
+    transition: all .5s;
+}
+
+@keyframes swipUp {
+    from {
+        transform: traslateY(200px);
+        opacity: 0;
+    }
+    to {
+        transform: traslateY(0);
+        opacity: 1;
+    }
+}

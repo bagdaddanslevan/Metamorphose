@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=WindSong&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;0,700;1,200&display=swap');
+*,
+ ::before,
+ ::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f3d3d;
+    background-image: url(../aplet/foret_cerf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+}
+
+.container-title {
+    animation: swipUp 5s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 200px 10px;
+    padding-bottom: 0;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.container-title .header {
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 35px !important;
+    font-family: 'WindSong';
+    padding: 100px 150px 100px;
+}
+
+.container-title .header #title {
+    text-shadow: 5px 1px rgba(0, 0, 0, 0.37);
+    padding: 15px;
+    background: -webkit-linear-gradient(#df5e22f3, #722502, #028b52);
+    border-radius: 0.8px;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-text-stroke: black;
+    transition: all .5s;
+}
+
+.container-title ul {
+    display: flex;
+    justify-content: center;
+}
+
+.container-title ul li {
+    list-style: none;
+    height: 80px;
+}
+
+.container-title ul li a {
+    outline: none;
+    background: -webkit-linear-gradient(#df5e22f3, #722502, #028b52);
+    border-radius: 0.8px;
+    -webkit-text-stroke: black;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-family: 'WindSong';
+    height: 60px;
+    width: 100%;
+    padding: 18px;
+}
+
+.logo-medias {
+    position: absolute;
+    top: 15%;
+    right: 0%;
+}
+
+.logo-medias li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-medias li img {
+    height: 60px;
+    margin: 20px;
+    filter: invert(1);
+    transform: scale(0.5);
+}
+
+a {
+    transition: .5s ease;
+    cursor: pointer;
+    position: relative;
+    font-family: 'WindSong';
+    font-size: 40px;
+    user-select: none;
+    z-index: 5;
+    margin: 30px;
+    text-align: center;
+}
+
+.container-title ul li a:hover {
+    transition: .5s ease;
+    text-shadow: 0.5px 10px 5px#3b1818;
+    -webkit-text-fill-color: -webkit-linear-gradient(#df5e22f3, #722502, #028b52)!important;
+}
+
+a::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    height: 60px;
+    width: 10px;
+    border-radius: 12px;
+    z-index: -1;
+    transition: all .5s;
+}
+
+
+/***** beginin form ****/
+
+.contact-form {
+    animation: swipUp 5s;
+    max-width: 600px;
+    height: 10px;
+    padding: 0 10px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contact-form-text {
+    display: block;
+    width: 25%;
+    height: 30px;
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 10px 40px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.contact-form-text:focus {
+    box-shadow: 0 0 10px 10px #308debc7;
+}
+
+textarea.contact-form-text {
+    height: 120px;
+    width: 75%;
+}
+
+.box-container-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+    height: 400px;
+    background-color: rgb(31, 31, 31);
+    position: relative;
+    padding: 20px;
+}
+
+.box .contact-form-btn {
+    align-self: center;
+    height: 50px;
+    border: white 1px;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.box::before,
+.box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, rgb(187, 106, 29), #155e5e, #18d868, #3facf5, rgb(187, 106, 29), #3facf5, #18d868, #155e5e, #2636c4, #155e5e);
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    z-index: -1;
+    background-size: 500%;
+    animation: animate 20s infinite;
+}
+
+.box::after {
+    filter: blur(20px);
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 300% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes swipUp {
+    from {
+        transform: traslateY(200px);
+        opacity: 0;
+    }
+    to {
+        transform: traslateY(0);
+        opacity: 1;
+    }
+}
