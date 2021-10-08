@@ -9,6 +9,7 @@
 }
 
 body {
+    background-color: #1f3d3d;
     background-image: url(../aplet/foret_cerf.jpg);
     background-repeat: no-repeat;
     background-size: cover;
