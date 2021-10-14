@@ -235,16 +235,33 @@ iframe {
     width: 50%;
 }
 
+footer a {
+    font-family: 'raleway';
+    font-size: 13px;
+    list-style: none;
+    background-clip: border-box;
+    text-decoration: none;
+    color: white;
+}
+
 footer {
-    height: 500px;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
+    text-align: center;
+}
+
+footer .content-footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
 }
 
 footer div {
-    height: 350px;
     margin: 12px;
     width: 100%;
-    background: rgba(0, 0, 255, 0.425);
+    background: rgba(31, 34, 33, 0.24);
+    list-style: none;
+    font-family: 'Raleway';
+    font-size: 15px;
 }

@@ -129,55 +129,81 @@ a::before {
     flex-direction: column;
 }
 
-.box-container {
+.box-container1,
+.box-container2,
+.box-container3,
+.box-container4 {
     display: flex;
+    width: 100%;
+    height: 90%;
 }
 
 .box {
-    width: 250px;
-    margin: 40px;
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, .1);
     transition: 1s;
-}
-
-.case-text {
-    width: 90%;
-    background: rgba(0, 0, 0, .5);
-    height: 300px;
-    text-align: left;
-    padding: 10px;
 }
 
 .case-text h5 {
     font-family: 'windSong'!important;
     text-align: center;
     padding: 10px;
+    font-size: 50px !important;
 }
 
-.case-text h6 {
-    font-family: 'windSong'!important;
+.case-text1,
+.case-text2,
+.case-text3,
+.case-text4 {
+    font-family: 'Raleway', 'sans-serif'!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    background: rgba(0, 0, 0, .5);
+    height: 100%;
     text-align: left;
     padding: 10px;
+    font-size: 20px;
+}
+
+.case-text1 p,
+.case-text2 p,
+.case-text3 p,
+.case-text4 {
+    font-family: 'Raleway', 'sans-serif'!important;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.case-text3 h6 {
+    width: 90%;
+    padding: 13px;
+    font-family: 'Raleway';
+    text-align: center;
+    padding: 10px;
+    line-height: 35px;
     font-size: 30px;
 }
 
-.case-text p {
-    width: 90%;
-    padding: 13px;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    padding: 15px;
-    letter-spacing: 1.5px;
-    line-height: 20px;
-    font-weight: 400;
+.case-text3 ul {
+    margin: 30px;
+    padding: 50px;
+    font-family: 'Raleway', 'sans-serif';
 }
 
-.box2 {
+.box1,
+.box2,
+.box3,
+.box4 {
     display: flex;
 }
 
 .box img {
-    border-radius: 10px;
+    border-radius: 5px;
     width: 100%;
 }
 
@@ -211,4 +237,35 @@ a::before {
     100% {
         right: 0%;
     }
+}
+
+footer a {
+    font-family: 'raleway';
+    font-size: 13px;
+    list-style: none;
+    background-clip: border-box;
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    text-align: center;
+}
+
+footer .content-footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+footer div {
+    margin: 12px;
+    width: 100%;
+    background: rgba(31, 34, 33, 0.24);
+    list-style: none;
+    font-family: 'Raleway';
+    font-size: 15px;
 }
