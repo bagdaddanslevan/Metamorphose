@@ -140,9 +140,10 @@ a::before {
 
 .box {
     width: 350px;
-    margin: 20px;
-    padding: 20px;
-    box-shadow: 0 0 20px 3px rgba(0, 0, 0, .1);
+    height: 350px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, .1);
     transition: 1s;
 }
 
@@ -169,24 +170,24 @@ a::before {
     font-size: 20px;
 }
 
-.case-text1 p,
-.case-text2 p,
-.case-text3 p,
-.case-text4 {
-    font-family: 'Raleway', 'sans-serif'!important;
-    text-align: left;
-    padding: 10px;
-    font-size: 20px;
-}
-
 .case-text3 h6 {
-    width: 90%;
+    width: 60%;
     padding: 13px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', 'sans-serif';
     text-align: center;
     padding: 10px;
     line-height: 35px;
     font-size: 30px;
+}
+
+.case-text1 p,
+.case-text2 p,
+.case-text3 p,
+.case-text4 p {
+    font-family: 'Raleway', 'sans-serif'!important;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
 }
 
 .case-text3 ul {
