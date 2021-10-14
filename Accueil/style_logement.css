@@ -1,272 +1,305 @@
 @import url("https://fonts.googleapis.com/css2?family=WindSong&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;0,700;1,200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;0,700;1,200&display=swap");
 *,
 ::before,
 ::after {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
 }
-
+html {
+	background: black;
+}
 body {
-    background-image: url(../aplet/foret_cerf.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 90vh;
+	background-image: url(../aplet/foret_cerf.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 90vh;
+	color: white;
+	overflow-x: hidden;
 }
 
 .container-title {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    animation: position 4s;
-    font-weight: bold;
-    text-decoration: none;
-    background-color: transparent;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	animation: position 4s;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: transparent;
 }
 
 .container-title .header {
-    display: flex;
-    height: 150px;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 40px;
-    font-family: 'WindSong';
-    padding: 100px 150px 100px;
+	display: flex;
+	height: 150px;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 40px;
+	font-family: "WindSong";
+	padding: 100px 150px 100px;
 }
 
 .container-title .header #title {
-    text-shadow: 5px 1px rgba(0, 0, 0, 0.37);
-    padding: 15px;
-    background: -webkit-linear-gradient(#df5e22f3, #722502, #028b52);
-    border-radius: 0.8px;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    -webkit-text-stroke: black;
-    transition: all .5s;
+	text-shadow: 5px 1px rgba(0, 0, 0, 0.37);
+	padding: 15px;
+	background: -webkit-linear-gradient(#df5e22f3, #722502, #028b52);
+	border-radius: 0.8px;
+	-webkit-background-clip: text !important;
+	-webkit-text-fill-color: transparent !important;
+	-webkit-text-stroke: black;
+	transition: all 0.5s;
 }
 
 .container-title ul {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .container-title ul li {
-    list-style: none;
-    height: 80px;
+	list-style: none;
+	height: 80px;
 }
 
 .container-title ul li a {
-    outline: none;
-    background: -webkit-linear-gradient(#df5e22f3, #722502, #028b52);
-    border-radius: 0.8px;
-    -webkit-text-stroke: black;
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 40px;
-    font-family: 'WindSong';
-    height: 60px;
-    width: 100%;
-    padding: 18px;
+	outline: none;
+	background: -webkit-linear-gradient(#df5e22f3, #722502, #028b52);
+	border-radius: 0.8px;
+	-webkit-text-stroke: black;
+	background-clip: border-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 40px;
+	font-family: "WindSong";
+	height: 60px;
+	width: 100%;
+	padding: 18px;
 }
 
 .logo-medias {
-    animation: animate1 3s;
-    position: absolute;
-    top: 4%;
-    right: 0%;
+	animation: animate1 3s;
+	position: absolute;
+	top: 4%;
+	right: 0%;
 }
 
 .logo-medias li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .logo-medias li img {
-    height: 30px;
-    margin: 20px;
-    filter: invert(1);
-    transform: scale(1.1);
+	height: 30px;
+	margin: 20px;
+	filter: invert(1);
+	transform: scale(1.1);
 }
 
 a {
-    transition: .5s ease;
-    cursor: pointer;
-    position: relative;
-    font-family: 'WindSong';
-    font-size: 40px;
-    user-select: none;
-    z-index: 5;
-    margin: 30px;
-    text-align: center;
+	transition: 0.5s ease;
+	cursor: pointer;
+	position: relative;
+	font-family: "WindSong";
+	font-size: 40px;
+	user-select: none;
+	z-index: 5;
+	margin: 30px;
+	text-align: center;
 }
 
 .container-title ul li a:hover {
-    transition: .5s ease;
-    text-shadow: 0.5px 10px 5px#3b1818;
-    -webkit-text-fill-color: -webkit-linear-gradient(#df5e22f3, #722502, #028b52)!important;
+	transition: 0.5s ease;
+	text-shadow: 0.5px 10px 5px#3b1818;
+	-webkit-text-fill-color: -webkit-linear-gradient(
+		#df5e22f3,
+		#722502,
+		#028b52
+	) !important;
 }
 
 a::before {
-    position: absolute;
-    content: '';
-    left: 0;
-    height: 60px;
-    width: 10px;
-    border-radius: 12px;
-    z-index: -1;
-    transition: all .5s;
+	position: absolute;
+	content: "";
+	left: 0;
+	height: 60px;
+	width: 10px;
+	border-radius: 12px;
+	z-index: -1;
+	transition: all 0.5s;
 }
 
 .container {
-    width: 100%;
-    padding: 15px;
-    margin: 0;
-    box-sizing: border-box;
-    flex-direction: column;
+	width: 100%;
+	padding: 15px;
+	margin: 0;
+	box-sizing: border-box;
+	flex-direction: column;
 }
 
 .box-container1,
 .box-container2,
 .box-container3,
 .box-container4 {
-    display: flex;
-    width: 100%;
-    height: 90%;
+	padding: 100px;
+	display: flex;
+	width: 100%;
+	height: 90%;
+	justify-content: center;
+	height: fit-content;
 }
 
+.box-container1 .center-box,
+.box-container2 .center-box,
+.box-container3 .center-box {
+	width: 80%;
+	display: flex;
+}
+.box-container3 .center-box {
+	width: 100%;
+	display: flex;
+}
 .box {
-    width: 350px;
-    height: 350px;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 0 0 10px 3px rgba(0, 0, 0, .1);
-    transition: 1s;
+	width: 350px;
+	height: 350px;
+	margin: 10px;
+	padding: 10px;
+	box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+	transition: 1s;
 }
 
 .case-text h5 {
-    font-family: 'windSong'!important;
-    text-align: center;
-    padding: 10px;
-    font-size: 50px !important;
+	font-family: "windSong" !important;
+	text-align: center;
+	padding: 10px;
+	font-size: 50px !important;
 }
 
 .case-text1,
 .case-text2,
 .case-text3,
 .case-text4 {
-    font-family: 'Raleway', 'sans-serif'!important;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 90%;
-    background: rgba(0, 0, 0, .5);
-    height: 100%;
-    text-align: left;
-    padding: 10px;
-    font-size: 20px;
+	font-family: "Raleway", "sans-serif" !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 90%;
+	background: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	text-align: left;
+	padding: 10px;
+	font-size: 20px;
+}
+.case-text1 {
+	height: fit-content;
+	text-align: center;
+	justify-content: center;
+	align-self: center;
 }
 
 .case-text3 h6 {
-    width: 60%;
-    padding: 13px;
-    font-family: 'Raleway', 'sans-serif';
-    text-align: center;
-    padding: 10px;
-    line-height: 35px;
-    font-size: 30px;
+	padding: 13px;
+	font-family: "Raleway", "sans-serif";
+	text-align: center;
+	padding: 10px;
+	line-height: 35px;
+	font-size: 30px;
+}
+.case-text3 h5,
+.case-text3 h6 {
+	text-align: center;
 }
 
 .case-text1 p,
 .case-text2 p,
 .case-text3 p,
 .case-text4 p {
-    font-family: 'Raleway', 'sans-serif'!important;
-    text-align: left;
-    padding: 10px;
-    font-size: 20px;
+	font-family: "Raleway", "sans-serif" !important;
+	text-align: left;
+	padding: 10px;
+	font-size: 20px;
 }
 
 .case-text3 ul {
-    margin: 30px;
-    padding: 50px;
-    font-family: 'Raleway', 'sans-serif';
+	margin: 30px;
+	padding: 50px;
+	font-family: "Raleway", "sans-serif";
 }
 
 .box1,
 .box2,
 .box3,
 .box4 {
-    display: flex;
+	display: flex;
+}
+.box3 {
+	flex-wrap: wrap;
 }
 
 .box img {
-    border-radius: 5px;
-    width: 100%;
+	border-radius: 5px;
+	width: 100%;
 }
 
 .box:hover {
-    transform: scale(1.5);
-    z-index: 2;
+	transform: scale(1.5);
+	z-index: 2;
 }
 
 @keyframes swipUp {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 @keyframes position {
-    from {
-        padding: 250px 10px;
-    }
-    to {
-        padding: none;
-    }
+	from {
+		padding: 250px 10px;
+	}
+	to {
+		padding: none;
+	}
 }
 
 @keyframes animate1 {
-    0% {
-        right: -50%;
-    }
-    100% {
-        right: 0%;
-    }
+	0% {
+		right: -50%;
+	}
+	100% {
+		right: 0%;
+	}
 }
 
 footer a {
-    font-family: 'raleway';
-    font-size: 13px;
-    list-style: none;
-    background-clip: border-box;
-    text-decoration: none;
-    color: white;
+	font-family: "raleway";
+	font-size: 13px;
+	list-style: none;
+	background-clip: border-box;
+	text-decoration: none;
+	color: white;
 }
 
 footer {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    text-align: center;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	text-align: center;
 }
 
 footer .content-footer {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 10px;
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 10px;
 }
 
 footer div {
-    margin: 12px;
-    width: 100%;
-    background: rgba(31, 34, 33, 0.24);
-    list-style: none;
-    font-family: 'Raleway';
-    font-size: 15px;
+	margin: 12px;
+	width: 100%;
+	background: rgba(31, 34, 33, 0.24);
+	list-style: none;
+	font-family: "Raleway";
+	font-size: 15px;
 }

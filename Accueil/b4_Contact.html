@@ -35,7 +35,7 @@
     </br>
 
 
-    <form class="box-container-form" action="post_contact.php" method="post">
+    <form class="box-container-form" action="post_contact.php" method="POST">
         <div class="box">
             <input type="text" name="nom" class="contact-form-text" placeholder="Nom" required>
             <input type="text" name="prenom" class="contact-form-text" placeholder="Prenom" required>
@@ -45,7 +45,26 @@
             <input type="text" name="nb_adultes " class="contact-form-text" placeholder="Nombre d'adulte" required>
             <input type="text" name="nb_enfants " class="contact-form-text" placeholder="Nombre enfant (-13ans bebe-2ans)" required>
             <input type="text" name="logement" class="contact-form-text" placeholder="Logements souhaitées">
-            <input type="text" name="options" class="contact-form-text" placeholder="Options souhaitées" required>
+            <div class="contact-form-text box-options"  style="display: flex;flex-direction: column;">
+            <label for="options" style="color: white;">choisissez vos options:</label>
+            <select id="options" >
+    
+                <option label="Champagne">Champagne</option>
+                <option label="Vins Rouge, Rose, Blanc">Rouge, Rose, Blanc</option>
+                <option label="Pétales de Roses">Pétales de Roses</option>
+                <option label="Planche apperitive">Planche apperitive</option>
+                <option label="Planche Végetalienne">Planche Végetalienne</option>
+                <option label="Fondues chocolat, pomme, banane, agrumes">Fondues</option>
+            </select>
+        </div>
+        <!---Champagne,
+Vins : (Rouge, Rose, Blanc),
+Pétales de Roses,
+Planche apperitive :
+Charcuterie fromages,
+Végétagienne legumes, fromages,
+Planche Végetalienne legumes,
+Fondue au chocolat (pomme, banane, agrumes).-->
             <textarea class="contact-form-text" placeholder="Votre message" required></textarea>
             <input type="submit" class="contact-form-btn" value="Envoyer">
         </div>
