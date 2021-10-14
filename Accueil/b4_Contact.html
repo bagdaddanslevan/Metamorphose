@@ -34,22 +34,22 @@
     </div>
     </br>
 
-    <div class="box-container-form" action="post_contact.php" method="post">
+
+    <form class="box-container-form" action="post_contact.php" method="post">
         <div class="box">
-            <input type="text" class="contact-form-text" placeholder="Nom">
-            <input type="text" class="contact-form-text" placeholder="Prenom">
-            <input type="text" class="contact-form-text" placeholder="Mail">
-            <input type="date" class="contact-form-text" placeholder="Dates souhaité entrée">
-            <input type="date" class="contact-form-text" placeholder="Dates souhaité sortie">
-            <input type="text" class="contact-form-text" placeholder="Nombre d'adulte">
-            <input type="text" class="contact-form-text" placeholder="Nombre enfant (-13ans bebe-2ans)">
-            <input type="text" class="contact-form-text" placeholder="Logements souhaitées">
-            <input type="text" class="contact-form-text" placeholder="Options souhaitées">
-            <textarea class="contact-form-text" placeholder="Votre message"></textarea>
-            <input type="button" class="contact-form-btn" value="Envoyer">
+            <input type="text" name="nom" class="contact-form-text" placeholder="Nom" required>
+            <input type="text" name="prenom" class="contact-form-text" placeholder="Prenom" required>
+            <input type="text" name="email" class="contact-form-text" placeholder="email" required>
+            <input type="date" name="date_arrivée " class="contact-form-text" placeholder="Dates souhaité entrée" required>
+            <input type="date" name="date_sortie " class="contact-form-text" placeholder="Dates souhaité sortie" required>
+            <input type="text" name="nb_adultes " class="contact-form-text" placeholder="Nombre d'adulte" required>
+            <input type="text" name="nb_enfants " class="contact-form-text" placeholder="Nombre enfant (-13ans bebe-2ans)" required>
+            <input type="text" name="logement" class="contact-form-text" placeholder="Logements souhaitées">
+            <input type="text" name="options" class="contact-form-text" placeholder="Options souhaitées" required>
+            <textarea class="contact-form-text" placeholder="Votre message" required></textarea>
+            <input type="submit" class="contact-form-btn" value="Envoyer">
         </div>
 
-    </div>
     </form>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
