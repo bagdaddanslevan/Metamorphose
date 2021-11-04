@@ -3,8 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Restons en Contact</title>
+    <meta name="type" content="website">
+    <meta name="description" content=" Votre Hôte vous propose un moment un moment unique, au coeur de la foret provencale nous mettons à disposition 2 chambres : La luxueuse roulotte Interlude et son jacuzzi, et le secret chalet tordu Sortilège avec son bain nordique.
+    un designe originale idéale pour crée une ambiance mysterieuse.
+    située sur la commune de Lambesc (13410) à 24 km d'Aix en Provence(13100), 21 km de Salon de Provence(13300) et 57 km de Marseille (13000).
+    Venez profité d'un insant de détente, de calme au coeur de la regions Provence Alpes Côte d'Azure. Pour un Week-end Romantique, quelques jours de détente">
+    <meta name="keywords" content="archetier, archet, Lartigue, reméchage, réparation, Lille,quatuor, Centre ville,Cormontaigne,Lille flandres, république beau art,archetière créatrice,
+        Gilles Duhaut, maître archetier,France, professionnel ">
+    <meta name="robots" content="index /">
+    <meta name="robots" content="follow /">
     <link rel="stylesheet" href="./style_contact.css">
     <link rel="stylesheet" href="cursor.css">
 </head>
@@ -18,20 +28,14 @@
         <div class="header">
             <h1 id="title"> Nous Contacter</h1><img class="logo_pap" src="../aplet/pap.gif" height="90" width="90"></div>
         <ul>
-            <li><a href="b1_index.html">Acceuil</a></li>
+            <li><a href="index.html">Acceuil</a></li>
             <li><a href="b2_Hébergement.html">Hébergement</a></li>
             <li><a href="b3_Autour_de_nous.html">Autour de nous</a></li>
         </ul>
     </div>
 
 
-    <div class="logo-medias">
-        <ul>
-            <li class="bulle"><img src="../aplet/facebook1.png" class="icone_medias" alt=" " height="50"></li>
-            <li class="bulle"><img src="../aplet/instagram1.png " class="icone_medias " alt=" " height="50"></li>
-            <li class="bulle"><img src="../aplet/google1.png " class="icone_medias " alt=" " height="50"></li>
-        </ul>
-    </div>
+    
     </br>
 
 
@@ -39,23 +43,31 @@
         <div class="box">
             <input type="text" name="nom" class="contact-form-text" placeholder="Nom" required>
             <input type="text" name="prenom" class="contact-form-text" placeholder="Prenom" required>
-            <input type="text" name="email" class="contact-form-text" placeholder="email" required>
-            <input type="date" name="date_arrivée " class="contact-form-text" placeholder="Dates souhaité entrée" required>
-            <input type="date" name="date_sortie " class="contact-form-text" placeholder="Dates souhaité sortie" required>
-            <input type="text" name="nb_adultes " class="contact-form-text" placeholder="Nombre d'adulte" required>
-            <input type="text" name="nb_enfants " class="contact-form-text" placeholder="Nombre enfant (-13ans bebe-2ans)" required>
-            <input type="text" name="logement" class="contact-form-text" placeholder="Logements souhaitées">
-            <div class="contact-form-text box-options"  style="display: flex;flex-direction: column;">
-            <label for="options" style="color: white;">choisissez vos options:</label>
-            <select id="options" >
-    
-                <option label="Champagne">Champagne</option>
-                <option label="Vins Rouge, Rose, Blanc">Rouge, Rose, Blanc</option>
-                <option label="Pétales de Roses">Pétales de Roses</option>
-                <option label="Planche apperitive">Planche apperitive</option>
-                <option label="Planche Végetalienne">Planche Végetalienne</option>
-                <option label="Fondues chocolat, pomme, banane, agrumes">Fondues</option>
+            <input type="email" name="email" class="contact-form-text" placeholder="email" required>
+            <input type="date" name="sortie" class="contact-form-text" placeholder="Dates souhaité sortie" required>
+            <input type="date" name="arrivee" class="contact-form-text" placeholder="Dates souhaité entrée" required>
+            <input type="number" name="nb_enfants_2" class="contact-form-text" placeholder="Nombre d'enfants -2" required>
+            <input type="number" name="nb_enfants_13" class="contact-form-text" placeholder="Nombre d'enfants -13 ans " required>
+            <input type="number" name="nb_adultes" class="contact-form-text" placeholder="Nombre d'adultes" required>
+            <select name="logement" id="" class="contact-form-text"  placeholder="Choississez votre logement" >
+                <option value="">Choississez votre logement</option>
+                <option value="interlude" >interlude</option>
+                <option value="Sortilege">Sortilege</option>
             </select>
+        
+            
+            <!--<input type="number" name="nb_enfants-13 " class="contact-form-text" placeholder="Nombre enfant (-13ans)" required>
+            <input type="number" name="nb_enfants-2 " class="contact-form-text" placeholder="Nombre enfant (-2)" required> -->
+
+            <div class="contact-form-text box-options"  style="display: flex; height: fit-content; color: white;">
+                <label for="options" style="color: white;">choisissez vos options:</label>
+               <p><input type="checkbox" placeholder="Champagne" name="champagne" value="Champagne">Champagne</p>
+                <p><input type="checkbox" placeholder="Vins Rouge, Rose, Blanc" name="vins" value="vins">Vins Rouge, Rose, Blanc</p>
+                <p><input type="checkbox" placeholder="Pétales de Roses" name="petales" value="petales">Pétales de Roses</p>
+            <p> <input type="checkbox" placeholder="Planche apperitive mixte" name="mixte" value="planche_mix">Planche mix</p>
+            <p> <input type="checkbox" placeholder="Planche Végetarienne" name="vegetarienne" value="planche_vegetarienne">Planche Végetarienne</p>
+            <p> <input type="checkbox" placeholder="Planche Végetalienne" name="vegetalienne" value="planche_vegetalienne">Planche Végetalienne</p>
+                <p><input type="checkbox" placeholder="Fondues chocolat, pomme, banane, agrumes" name="fondue" value="fondue">Fondues chocolat</p>
         </div>
         <!---Champagne,
 Vins : (Rouge, Rose, Blanc),
@@ -65,16 +77,13 @@ Charcuterie fromages,
 Végétagienne legumes, fromages,
 Planche Végetalienne legumes,
 Fondue au chocolat (pomme, banane, agrumes).-->
-            <textarea class="contact-form-text" placeholder="Votre message" required></textarea>
+            <textarea class="contact-form-text" placeholder="Votre message" name="text" required></textarea>
             <input type="submit" class="contact-form-btn" value="Envoyer">
         </div>
 
     </form>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
-    <script src="cursor.js"></script>
-
-
+    
+    
     <footer>
         <div class="content-footer">
             <div classe="footer-adresse">
@@ -82,24 +91,34 @@ Fondue au chocolat (pomme, banane, agrumes).-->
                 <p>Route de Caireval – 13410 LAMBESC</p>
                 </br>
             </div>
-
-
+            
+            
             <div class="footer-contact">
                 <ul class="contact-list"></ul>
                 <li>
                     <h5>Restons en Contact</h5>
                 </li>
                 <li>notremetamorphose@gmail.com</li>
-                <li>0788437423</li>
+                <li>0783268373</li>
             </div>
-
+            
 
             <div class="mention légales">
                 <h5>Mentions légales</h5>
-                <li><a href="../aplet/cgv.html">Condition générales de ventes</a></li>
+                <li><a href="./aplet/cgv.html">Condition générales de ventes</a></li>
             </div>
         </div>
+        <div class="logo-medias">
+            <ul>
+                <li class="bulle"><img src="./aplet/facebook1.png" class="icone_medias" alt=" " height="50"></li>
+                <li class="bulle"><img src="./aplet/instagram1.png " class="icone_medias " alt=" " height="50"></li>
+                <li class="bulle"><img src="./aplet/google1.png " class="icone_medias " alt=" " height="50"></li>
+            </ul>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script src="cursor.js"></script>
 </body>
 
 </html>

@@ -9,7 +9,7 @@
 }
 
 body {
-	background-image: url(../aplet/foret_cerf.jpg);
+	background-image: url(./aplet/foret_cerf.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
@@ -20,7 +20,7 @@ body {
 .container-title {
 	display: flex;
 	height: 100%;
-	animation: swipUp 8s;
+	animation: swipUp 1s ease;
 	align-items: center;
 	flex-direction: column;
 	padding: 150px 10px;
@@ -34,7 +34,7 @@ body {
 	height: 150px;
 	justify-content: space-between;
 	align-items: center;
-	font-size: 40px;
+	font-size: 2.5rem;
 	font-family: "WindSong";
 	padding: 100px 150px 100px;
 }
@@ -68,31 +68,24 @@ body {
 	background-clip: border-box;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-size: 40px;
+	font-size: 2.5rem;
 	font-family: "WindSong";
 	height: 60px;
 	width: 100%;
 	padding: 18px;
 }
 
-.logo-medias {
-	animation: animate 5s;
-	position: absolute;
-	top: 15%;
-	right: 0%;
-}
-
-.logo-medias li {
+.logo-medias ul {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	justify-content: center;
 }
-
+.logo-medias li {
+	list-style: none;
+}
 .logo-medias li img {
-	height: 60px;
-	margin: 20px;
+	height: 10px;
+	margin: 10px;
 	filter: invert(1);
-	transform: scale(0.5);
 }
 
 a {
@@ -139,11 +132,12 @@ footer a {
 
 footer {
 	display: flex;
+	flex-direction: column;
 	align-items: flex-end;
 	justify-content: space-around;
 	text-align: center;
 	color: white;
-	background: rgba(0, 0, 0, 0.5);
+	background: black;
 }
 
 footer .content-footer {
@@ -167,5 +161,44 @@ footer div {
 	}
 	to {
 		opacity: 1;
+	}
+}
+
+@media (max-width: 426px) {
+	body {
+		background-size: 300% 90vh;
+	}
+
+	.container-title {
+		height: fit-content;
+		padding: 0;
+	}
+	.container-title .header {
+		width: 100%;
+		padding: 50px;
+		font-size: 1rem;
+		flex-direction: column;
+		align-items: center;
+		height: fit-content;
+	}
+
+	.container-title ul {
+		display: flex;
+		flex-direction: column;
+		font-size: 12px;
+		padding-left: 0;
+		text-align: center;
+		width: 100%;
+		height: fit-content;
+	}
+	.container-title ul li {
+		width: 100%;
+	}
+	.container-title ul li a {
+		width: 100%;
+		font-size: 25px;
+	}
+	.content-footer {
+		flex-direction: column;
 	}
 }

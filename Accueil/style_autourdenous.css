@@ -74,26 +74,6 @@ body {
 	padding: 18px;
 }
 
-.logo-medias {
-	animation: animate1 5s ease forwards;
-	position: absolute;
-	top: 15%;
-	right: -50%;
-}
-
-.logo-medias li {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.logo-medias li img {
-	height: 60px;
-	margin: 20px;
-	filter: invert(1);
-	transform: scale(0.5);
-}
-
 a {
 	transition: 0.5s ease;
 	cursor: pointer;
@@ -267,10 +247,12 @@ footer a {
 
 footer {
 	display: flex;
+	flex-direction: column;
 	align-items: flex-end;
 	justify-content: space-around;
 	text-align: center;
 	color: white;
+	background: black;
 }
 
 footer .content-footer {
@@ -286,4 +268,98 @@ footer div {
 	list-style: none;
 	font-family: "Raleway";
 	font-size: 15px;
+}
+
+@media (max-width: 426px) {
+	body {
+		background-size: 300% 90vh;
+	}
+
+	.container-title {
+		height: fit-content;
+		padding: 0;
+	}
+	.container-title .header {
+		width: 100%;
+		padding: 50px;
+		flex-direction: column;
+		align-items: center;
+		height: fit-content;
+	}
+
+	.container-title ul {
+		display: flex;
+		flex-direction: column;
+		font-size: 12px;
+		padding-left: 0;
+		text-align: center;
+		width: 100%;
+		height: fit-content;
+	}
+	.container-title ul li {
+		width: 100%;
+	}
+	.container-title ul li a {
+		width: 100%;
+		font-size: 25px;
+	}
+	.content-footer {
+		flex-direction: column;
+	}
+}
+.logo-medias ul {
+	display: flex;
+	justify-content: center;
+}
+.logo-medias li {
+	list-style: none;
+}
+.logo-medias li img {
+	height: 10px;
+	margin: 10px;
+	filter: invert(1);
+}
+@media (max-width: 766px) {
+	body {
+		background-size: 300% 90vh;
+	}
+	.box-container {
+		padding: 0;
+	}
+	.box-container .box {
+		padding: 0;
+		width: 100%;
+	}
+	.container-title {
+		height: fit-content;
+		padding: 0;
+	}
+	.container-title .header {
+		width: 100%;
+		padding: 50px;
+		font-size: 1rem;
+		flex-direction: column;
+		align-items: center;
+		height: fit-content;
+	}
+
+	.container-title ul {
+		display: flex;
+		flex-direction: column;
+		font-size: 12px;
+		padding-left: 0;
+		text-align: center;
+		width: 100%;
+		height: fit-content;
+	}
+	.container-title ul li {
+		width: 100%;
+	}
+	.container-title ul li a {
+		width: 100%;
+		font-size: 25px;
+	}
+	.content-footer {
+		flex-direction: column;
+	}
 }
